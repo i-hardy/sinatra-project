@@ -14,5 +14,6 @@ get '/meow' do
 end
 
 get '/cat' do
-  send_file"cat.html"
+  @name = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
 end
